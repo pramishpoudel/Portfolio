@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pramish Poudel's Portfolio</title>
+  <link href="first.css" rel="stylesheet">
+   
+</head>
+<body>
+  <div class="container" id="main-container">
+    <div class="topbar">
+      <div class="logo">Pramish Poudel</div>
+      <div class="nav-container">
+        <div class="menu">
+          <a href="#home" class="nav-link" onclick="showSection('home')">Home</a>
+          <a href="https://www.blogger.com/blog/posts" class="nav-link" onclick="showSection('blog')">Blog</a>
+          <a href="#projects" class="nav-link" onclick="showSection('projects')">Projects</a>
+          <a href="#skills" class="nav-link" onclick="showSection('skills')">Skills</a>
+          <a href="#testimonials" class="nav-link" onclick="showSection('testimonials')">Testimonials</a>
+        </div>
+        <button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <canvas id="particles-js"></canvas>
+      <aside class="sidebar">
+        <div class="photo-box">
+            <img src="PHOTO.jpg" alt="Profile Photo" width="200" height="200" />
+            <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-6 2.67-6 6v2h12v-2c0-3.33-2.67-6-6-6z"/>
+          </svg>
+        </div>
+        <h3>Pramish Poudel</h3>
+      </aside>
+
+      <main class="content">
+        <section id="home" class="section active">
+          <h1 class="hero-text" id="typewriter"></h1>
+          <p class="hero-text"  style="text-align: justify;">
+            I am Pramish Poudel, a dedicated Information Technology graduate with a strong foundation in data science and machine learning.
+            I am proficient in tools and technologies such as NumPy, Pandas, Matplotlib, Seaborn, SQL, and machine learning frameworks including
+            Scikit-learn and TensorFlow. I gained hands-on experience as a Data Science Intern at Sipalaya Info Tech Pvt. Ltd., where I applied
+            my skills to real-world projects, enhancing my expertise in data analysis, visualization, and predictive modeling.
+          </p>
+          <svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none">
+            <path d="M0,50V25C240,0 480,50 720,25C960,0 1200,50 1440,25V50H0Z"/>
+          </svg>
+          <div class="contact-section">
+            <h2>Send Me a Message</h2>
+            <form id="message-form" novalidate>
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name" class="a" />
+                <div id="name-error" class="error-message">Please enter your name</div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email" class="a" />
+                <div id="email-error" class="error-message">Please enter a valid email</div>
+              </div>
+              <div class="form-group">
+                <textarea id="message-text" placeholder="Your Message" required aria-label="Your Message" class="a"></textarea>
+                <div id="message-error" class="error-message">Please enter a message</div>
+              </div>
+              <button type="submit">Send Message</button>
+              <div id="confirmation"></div>
+            </form>
+          </div>
+        </section>
+
+        <section id="blog" class="section">
+          <svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none">
+            <path d="M0,50V25C240,0 480,50 720,25C960,0 1200,50 1440,25V50H0Z"/>
+          </svg>
+          <a href="https://www.blogger.com/blog/posts/4545432241937686793"><h2>Blog</h2></a>
+          <p>Discover my latest articles and insights on web development, technology, and more.</p>
+        </section>
+
+        <section id="projects" class="section">
+          <svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none">
+            <path d="M0,50V25C240,0 480,50 720,25C960,0 1200,50 1440,25V50H0Z"/>
+          </svg>
+          <h2>Projects</h2>
+          <p>Check out my collection of innovative projects built with passion and creativity.</p>
+        </section>
+
+        <section id="skills" class="section skills-section">
+          <svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none">
+            <path d="M0,50V25C240,0 480,50 720,25C960,0 1200,50 1440,25V50H0Z"/>
+          </svg>
+          <h2>Skills</h2>
+          <div class="skill-bar">python<div class="skill-progress" style="--progress: 95%;" data-skill="HTML/CSS"></div></div>
+          <div class="skill-bar">Numpy<div class="skill-progress" style="--progress: 90%;" data-skill="JavaScript"></div></div>
+          <div class="skill-bar">Scikit-learn and TensorFlow<div class="skill-progress" style="--progress: 85%;" data-skill="React"></div></div>
+          <div class="skill-bar">Pandas<div class="skill-progress" style="--progress: 85%;" data-skill="React"></div></div>
+          <div class="skill-bar">Matplotlib<div class="skill-progress" style="--progress: 85%;" data-skill="React"></div></div>
+          <div class="skill-bar">Seaborn<div class="skill-progress" style="--progress: 85%;" data-skill="React"></div></div>
+           
+        </section>
+
+        <section id="testimonials" class="section testimonials-section">
+          <svg class="wave-divider" viewBox="0 0 1440 50" preserveAspectRatio="none">
+            <path d="M0,50V25C240,0 480,50 720,25C960,0 1200,50 1440,25V50H0Z"/>
+          </svg>
+          <h2>Testimonials</h2>
+            <div id="cv-section" class="cv-section">
+          <iframe src="BI practical.pdf" title="Pramish Poudel's CV"></iframe>
+        </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // Typewriter Effect for Hero Text
+    const typewriterText = "Welcome to My Epic Portfolio!";
+    let i = 0;
+    const typewriter = document.getElementById("typewriter");
+    function typeWriter() {
+      if (i < typewriterText.length) {
+        typewriter.innerHTML += typewriterText.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    window.onload = typeWriter;
+
+    // GSAP Animations
+    gsap.from(".hero-text", {
+      opacity: 0,
+      y: 30,
+      duration: 1.5,
+      ease: "elastic.out(1, 0.5)",
+      delay: 1
+    });
+    gsap.from(".form-group", {
+      opacity: 0,
+      x: -30,
+      duration: 1,
+      stagger: 0.3,
+      ease: "back.out(1.7)",
+      delay: 2
+    });
+
+    // Particles.js Initialization
+    let particlesConfig = {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: ["#14b8a6", "#f472b6"] },
+        shape: { type: "star" },
+        opacity: { value: 0.6, random: true },
+        size: { value: 4, random: true },
+        line_linked: { enable: true, distance: 150, color: "#14b8a6", opacity: 0.5, width: 1 },
+        move: { enable: true, speed: 2.5, direction: "none", random: true, out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { repulse: { distance: 150 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    };
+    particlesJS("particles-js", particlesConfig);
+
+    // Form Validation and Submission
+    document.getElementById("message-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.querySelectorAll(".error-message").forEach(error => error.style.display = "none");
+      let hasError = false;
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message-text").value.trim();
+
+      if (!name) {
+        document.getElementById("name-error").style.display = "block";
+        hasError = true;
+      }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById("email-error").style.display = "block";
+        hasError = true;
+      }
+      if (!message) {
+        document.getElementById("message-error").style.display = "block";
+        hasError = true;
+      }
+
+      if (!hasError) {
+        document.getElementById("confirmation").textContent = "Thank you for your message!";
+        gsap.fromTo("#confirmation", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, ease: "elastic.out(1, 0.5)" });
+        this.reset();
+      }
+    });
+
+    document.querySelectorAll("#message-form input, #message-form textarea").forEach(field => {
+      field.addEventListener("focus", () => {
+        gsap.to("#confirmation", { opacity: 0, y: 10, duration: 0.3 });
+        document.getElementById("confirmation").textContent = "";
+      });
+    });
+
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      gsap.from(`#${id} h2, #${id} p, #${id} .testimonial`, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        stagger: 0.3,
+        ease: "back.out(1.7)"
+      });
+    }
+
+    /*
+      function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      particlesConfig.particles.color.value = isDarkMode ? ["#f472b6", "#a855f7"] : ["#14b8a6", "#f472b6"];
+      particlesConfig.particles.line_linked.color = isDarkMode ? "#f472b6" : "#14b8a6";
+      pJSDom[0].pJS.fn.vendors.destroypJS();
+      particlesJS("particles-js", particlesConfig);
+    } */
+
+    function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+    const isDarkMode = document.body.classList.contains("dark-mode");
+    // Set particles color to white in dark mode, dark in light mode
+    particlesConfig.particles.color.value = isDarkMode ? ["#ffffff", "#f5f5f5"] : ["#000000", "#333333"];
+    // Set line color to white in dark mode, dark in light mode
+    particlesConfig.particles.line_linked.color = isDarkMode ? "#ffffff" : "#000000";
+    // Destroy and recreate particles with new config
+    pJSDom[0].pJS.fn.vendors.destroypJS();
+    particlesJS("particles-js", particlesConfig);
+}
+  </script>
+  <footer class="footer">
+       <a href="https://www.linkedin.com/in/pramish-poudel-7b622b210">linkedin</a>
+       <a href="https://github.com/pramishpoudel">Github</a>
+       <a href="https://www.kaggle.com/pramishpoudel">Kaggle</a>
+  </footer>
+</body>
+</html>
