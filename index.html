@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pramish Poudel — Data Scientist & ML enthusiast. Portfolio showcasing projects, skills and experience." />
+  <title>Pramish Poudel — Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link href="first.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" id="main-container">
+    <div class="topbar">
+      <div class="logo">Pramish Poudel</div>
+      <div class="nav-container">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <nav class="menu" id="menu">
+          <a href="#home" class="nav-link" data-target="home">Home</a>
+          <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+          <a href="#skills" class="nav-link" data-target="skills">Skills</a>
+          <a href="#experience" class="nav-link" data-target="experience">Experience</a>
+          <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+        </nav>
+        <button class="toggle-btn" onclick="toggleMode()">🌙</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <aside class="sidebar">
+        <div class="photo-box">
+          <img src="PHOTO.jpg" alt="Profile Photo" width="200" height="200" onerror="this.src='https://via.placeholder.com/200?text=Pramish'" />
+        </div>
+        <h3>Pramish Poudel</h3>
+        <p class="subtle">Data Science · Machine Learning · Python</p>
+        <div class="socials">
+          <a href="https://github.com/pramishpoudel" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/pramish-poudel-7b622b210" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </aside>
+
+      <main class="content">
+         
+        <section id="home" class="section active hero">
+          <div class="hero-inner">
+            <div class="hero-text">
+              <h1>Hi, I'm Pramish — Data Science,Machine learning and LLM practitioner</h1>
+              <p class="lead">I build ML models, analyze data, and create visual dashboards that help teams make smarter decisions.And also develop the LLM based chatbot</p>
+              <div class="hero-cta">
+                <a class="btn primary" href="mailto:pramishpoudel11@gmail.com?subject=Hi%20Pramish">Contact Me</a>
+                <a class="btn" href="https://github.com/pramishpoudel" target="_blank" rel="noopener">View GitHub</a>
+              </div>
+            </div>
+            <!-- <div class="hero-photo">
+              <img src="PHOTO.jpg" alt="Pramish photo" onerror="this.src='https://via.placeholder.com/260?text=Pramish'">
+            </div> -->
+          </div>
+        </section>
+
+        
+        <section id="projects" class="section">
+          <h2>Projects</h2>
+          <p>Selected projects demonstrating applied ML and data visualization.</p>
+          <div class="projects-grid">
+           <a class="project-link" href="https://github.com/pramishpoudel/Calculator" target="_blank" rel="noopener"><div class="project-card">
+              <h3><i class="fas fa-calculator"></i> Virtual Calculator</h3>
+              <p>Used CNN architecture for creating an image-driven virtual calculator.</p>
+            </div></a>
+            <a class="project-link" href="https://github.com/pramishpoudel/ChatBot" target="_blank" rel="noopener"><div class="project-card">
+              <h3><i class="fas fa-robot"></i> ChatBot</h3>
+              <p>A simple conversational agent built for learning and prototyping.</p>
+            </div></a>
+            <a class="project-link" href="https://pramishpoudel-tiktok-data-analytics-app-8ygq9w.streamlit.app/" target="_blank" rel="noopener"><div class="project-card">
+              <h3><i class="fas fa-chart-line"></i> TikTok Analytics</h3>
+              <p>Data dashboard using Streamlit, Pandas and Matplotlib for insights.</p>
+            </div></a>
+            <a class="project-link" href="https://github.com/pramishpoudel/ML_project" target="_blank" rel="noopener"><div class="project-card">
+              <h3><i class="fas fa-microscope"></i> ML Models</h3>
+              <p>Classification projects: fraud detection and breast cancer.</p> </div></a>
+              <a class="project-link" href="https://github.com/pramishpoudel/TODO-application" target="_blank" rel="noopener"><div class="project-card">
+              <h3><i class="fas fa-list-check"></i> Django TODO App</h3>
+              <p>TODO application built with Django.</p>
+              </div></a>
+           
+          </div>
+        </section>
+ 
+        <section id="skills" class="section skills-section">
+          <h2>Skills</h2>
+          <div class="skill-bar">Python <span class="skill-value">90%</span>
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+          <div class="skill-bar">SQL <span class="skill-value">85%</span>
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+          <div class="skill-bar">NumPy <span class="skill-value">85%</span>
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+          <div class="skill-bar">Scikit-learn / TensorFlow <span class="skill-value">80%</span>
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+          <div class="skill-bar">Pandas <span class="skill-value">85%</span>
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+          <div class="skill-bar">Visualization (Matplotlib / Seaborn) <span class="skill-value">80%</span>
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </section>
+
+       
+        <section id="experience" class="section">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2025 feb - Present</div>
+              <div class="timeline-content">
+                <h3> Data Science and ML Intern</h3>
+                <p>Sipayala Info Tech, Narephate kathmandu</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Feb 2025 - Present</div>
+              <div class="timeline-content">
+                <h3>Nobel PCB Learning</h3>
+                <p>Leadership and public speaking internship.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Oct 2023 - Dec 2023</div>
+              <div class="timeline-content">
+                <h3>IT Assistance Officer</h3>
+                <p>Espot Nepal, Newroad</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="section">
+          <h2>Contact</h2>
+          <p>If you'd like to collaborate or learn more about my work, send me a message.</p>
+          <a class="btn primary" href="mailto:pramishpoudel11@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2025 Pramish Poudel</div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/pramish-poudel-7b622b210">LinkedIn</a>
+        <a href="https://github.com/pramishpoudel">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation and section handling
+    const menu = document.getElementById('menu');
+    document.querySelectorAll('.nav-link').forEach(l => {
+      l.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = l.getAttribute('data-target');
+        showSection(id);
+        if(window.innerWidth < 900) document.getElementById('menu').classList.remove('open');
+      });
+    });
+
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      const el = document.getElementById(id);
+      if(el) el.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Theme toggle
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+
+    // Skill progress animation
+    function animateSkills(){
+      document.querySelectorAll('.skill-progress').forEach(el => {
+        const p = el.getAttribute('data-progress') || 0;
+        el.style.width = p + '%';
+      });
+    }
+    // Intersection observer for reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.section, .project-card, .timeline-item').forEach(el => observer.observe(el));
+
+    // Kick off on load
+    window.addEventListener('load', () => {
+      animateSkills();
+    });
+  </script>
+</body>
+</html>
